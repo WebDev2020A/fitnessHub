@@ -11,7 +11,7 @@ var app = express();
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb+srv://root:toor@cluster0.0f6xq.azure.mongodb.net/locallibrary?retryWrites=true';
+var mongoDB = 'mongodb+srv://root:toor@cluster0.0f6xq.azure.mongodb.net/fitnessHub?retryWrites=true';
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
